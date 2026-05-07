@@ -56,26 +56,35 @@ const Hero = () => {
             {/* Center profile or abstract shape */}
             <div className="absolute inset-0 m-auto w-72 h-72 rounded-full border border-white/10 flex items-center justify-center p-2">
               <img src="/images/profile.png" alt="Sheshu Kumar" className="w-full h-full object-cover rounded-full mix-blend-luminosity hover:mix-blend-normal transition-all duration-500 border border-primary/30 shadow-[0_0_40px_rgba(59,130,246,0.2)]" />
+              
+              {/* Orbiting elements */}
+              {/* Shield - Top Center */}
+              <div className="absolute -top-10 left-1/2 -translate-x-1/2 z-20">
+                <FloatingElement delay={2} duration={5} yOffset={-10}>
+                  <div className="w-12 h-12 rounded-xl glassmorphism flex items-center justify-center border-accent/40 shadow-[0_0_15px_rgba(34,211,238,0.3)]">
+                    <Shield className="text-accent" size={20} />
+                  </div>
+                </FloatingElement>
+              </div>
+
+              {/* Server - Middle Left */}
+              <div className="absolute top-1/4 -left-16 z-20">
+                <FloatingElement delay={0} yOffset={-12}>
+                  <div className="w-14 h-14 rounded-2xl glassmorphism flex items-center justify-center border-primary/40 shadow-[0_0_20px_rgba(59,130,246,0.3)]">
+                    <Server className="text-primary" size={24} />
+                  </div>
+                </FloatingElement>
+              </div>
+
+              {/* Wifi - Middle Right */}
+              <div className="absolute top-1/2 -right-12 z-20">
+                <FloatingElement delay={1} duration={7} yOffset={12}>
+                  <div className="w-12 h-12 rounded-2xl glassmorphism flex items-center justify-center border-secondary/40 shadow-[0_0_15px_rgba(139,92,246,0.3)]">
+                    <Wifi className="text-secondary" size={22} />
+                  </div>
+                </FloatingElement>
+              </div>
             </div>
-
-            {/* Orbiting elements */}
-            <FloatingElement delay={0} yOffset={-8}>
-              <div className="absolute top-[25%] left-[28%] w-14 h-14 rounded-2xl glassmorphism flex items-center justify-center border-primary/30">
-                <Server className="text-primary" size={24} />
-              </div>
-            </FloatingElement>
-
-            <FloatingElement delay={1} duration={7} yOffset={10}>
-              <div className="absolute top-[45%] right-[20%] w-12 h-12 rounded-2xl glassmorphism flex items-center justify-center border-secondary/30">
-                <Wifi className="text-secondary" size={22} />
-              </div>
-            </FloatingElement>
-
-            <FloatingElement delay={2} duration={5} yOffset={-6}>
-              <div className="absolute bottom-[25%] left-[32%] w-11 h-11 rounded-xl glassmorphism flex items-center justify-center border-accent/30">
-                <Shield className="text-accent" size={18} />
-              </div>
-            </FloatingElement>
           </div>
         </motion.div>
       </div>
