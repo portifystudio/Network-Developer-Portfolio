@@ -50,7 +50,7 @@ const Hero = () => {
           className="relative w-full h-[400px] md:h-[500px] flex items-center justify-center lg:block"
         >
           {/* Main glowing orb */}
-          <div className="absolute inset-0 m-auto w-64 h-64 rounded-full bg-primary/20 blur-[80px]" />
+          <div className="absolute inset-0 m-auto w-96 h-96 rounded-full bg-primary/20 blur-[100px]" />
 
           <div className="relative w-full h-full">
             {/* Center profile or abstract shape */}
@@ -59,21 +59,21 @@ const Hero = () => {
             </div>
 
             {/* Orbiting elements */}
-            <FloatingElement delay={0} yOffset={-30}>
-              <div className="absolute top-10 left-10 w-16 h-16 rounded-2xl glassmorphism flex items-center justify-center border-primary/30">
-                <Server className="text-primary" size={28} />
+            <FloatingElement delay={0} yOffset={-8}>
+              <div className="absolute top-[25%] left-[28%] w-14 h-14 rounded-2xl glassmorphism flex items-center justify-center border-primary/30">
+                <Server className="text-primary" size={24} />
               </div>
             </FloatingElement>
 
-            <FloatingElement delay={1} duration={7} yOffset={25}>
-              <div className="absolute top-32 right-0 w-14 h-14 rounded-2xl glassmorphism flex items-center justify-center border-secondary/30">
-                <Wifi className="text-secondary" size={24} />
+            <FloatingElement delay={1} duration={7} yOffset={10}>
+              <div className="absolute top-[45%] right-[20%] w-12 h-12 rounded-2xl glassmorphism flex items-center justify-center border-secondary/30">
+                <Wifi className="text-secondary" size={22} />
               </div>
             </FloatingElement>
 
-            <FloatingElement delay={2} duration={5} yOffset={-20}>
-              <div className="absolute bottom-20 left-24 w-12 h-12 rounded-xl glassmorphism flex items-center justify-center border-accent/30">
-                <Shield className="text-accent" size={20} />
+            <FloatingElement delay={2} duration={5} yOffset={-6}>
+              <div className="absolute bottom-[25%] left-[32%] w-11 h-11 rounded-xl glassmorphism flex items-center justify-center border-accent/30">
+                <Shield className="text-accent" size={18} />
               </div>
             </FloatingElement>
           </div>
