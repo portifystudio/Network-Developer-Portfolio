@@ -47,7 +47,7 @@ const Hero = () => {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
-          className="relative h-[500px] hidden lg:block"
+          className="relative w-full h-[400px] md:h-[500px] flex items-center justify-center lg:block"
         >
           {/* Main glowing orb */}
           <div className="absolute inset-0 m-auto w-64 h-64 rounded-full bg-primary/20 blur-[80px]" />
